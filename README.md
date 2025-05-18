@@ -105,9 +105,6 @@ To run inference with the fine-tuned model:
 python inference.py \
   --image_dir /path/to/images \
   --csv_path test_metadata.csv \
-  --output_path results.csv \
-  --base_model_id Salesforce/blip2-opt-2.7b \
-  --lora_model_path path/to/your/lora_model
 ```
 
 ### Inference Arguments
@@ -132,7 +129,7 @@ You can use different BLIP-2 models based on your hardware capabilities:
 - The model is optimized for one-word answers (as configured in the VQA generator)
 - For optimal training, a GPU with at least 8GB VRAM is recommended
 - The inference script uses torch half-precision (float16) if CUDA is available
-- The `find_image` function helps locate images in the ABO dataset structure
+
 
 ## Requirements
 
@@ -147,6 +144,6 @@ Key dependencies include:
 - tqdm
 - google.generativeai (for VQA data generation)
 
-## License
 
-[Add your license information here]
+
+
